@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #9B9500; /* Mustard */
+  --secondary-color: #9DC183; /* Sage */
+  --tertiary-color: #228B22; /* Forest Green */
+  --text-color: #36454F; /* A dark gray */
+  --footer-color: #f7f5f5; /* A light gray */
+  --light-text-color: #24292e; /* A light gray */
+  --font-family: 'Open Sans', sans-serif;
+
+}
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color); 
+    color: var(--light-text-color);
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 80px 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-color); 
+    color: var(--light-text-color);
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Section Background */
+.about-us-bg {
+  background-color: var(--primary-color);
+}
+
+/* Our Products Section */
+.our-products-bg {
+  background-color: #b2d5ff; /* second lightest shade of blue */
+}
+
+/* Success Stories Section */
+.success-stories-bg {
+  background-color: #FECE44; /* Mustard */
+  color: #333;
+  padding: 80px 0;
+}
+
+/* Contact Us Section */
+.contact-us-bg {
+  background-color: var(--primary-color);
+}
+
+img.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.img-wrap {
+    position: relative;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 18px;
+    color: #333;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #3f9cff; /* medium shade of blue */
+}
+
+
+
+.sticky-note {
+  position: relative;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #ffc107;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 600px;
+}
+
+.sticky-note::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #ffc107;
+  border-bottom: 20px solid transparent;
+}
+
+.sticky-note-text {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.sticky-note-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+
+
+.sticky-note-dark-mustard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+
+.sticky-notes {
+  position: relative;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #91c1fa;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 600px;
+}
+
+.sticky-notes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-left: 20px solid #91c1fa;
+  border-bottom: 20px solid transparent;
+}
